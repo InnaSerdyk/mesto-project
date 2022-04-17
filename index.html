@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Место</title>
+	<!--	<link rel="stylesheet" href="vendor/normalize.css">-->
+	<link rel="stylesheet" href="pages/index.css">
+</head>
+<body class="page">
+<header class="header">
+	<img class="header__logo" src="images/logo.svg" alt="логотип">
+</header>
+<main class="content">
+	<section class="profile">
+		<img class="profile__avatar" src="images/Avatar.svg" alt="аватарка">
+		<div class="profile__info">
+			<p class="profile__info profile__info_paragraph-name">Жак-Ив&nbsp;Кусто</p>
+			<fieldset class="profile__edit-button">
+				<input type="image" src="images/Edit Button.svg" alt="кнопка редактировать">
+			</fieldset>
+			<p class="profile__info profile__info_paragraph-position">Исследователь океана</p>
+		</div>
+		<button class="profile__button">
+			<img class="profile__button_image" src="images/plus.svg" alt="кнопка добавить">
+		</button>
+	</section>
+	<section class="elements">
+		<div class="element">
+			<img class="element__image" src="images/Карачаевск.jpg" alt="Карачаевск">
+			<div class="element_name">
+				<p class="element__paragraph">Карачаевск</p>
+				<img class="element__heart" src="images/heart.svg" alt="сердце">
+			</div>
+		</div>
+		<div class="element">
+			<img class="element__image" src="images/Эльбрус.jpg" alt="гора эльбрус">
+			<div class="element_name">
+				<p class="element__paragraph">Гора Эльбрус</p>
+				<img class="element__heart" src="images/heart.svg" alt="сердце">
+			</div>
+		</div>
+		<div class="element">
+			<img class="element__image" src="images/Домбай.jpg" alt="домбай">
+			<div class="element_name">
+				<p class="element__paragraph">Домбай</p>
+				<img class="element__heart" src="images/heart.svg" alt="сердце">
+			</div>
+		</div>
+		<div class="element">
+			<img class="element__image" src="images/Эльбрус светлый.jpg" alt="Гора Эльбрус">
+			<div class="element_name">
+				<p class="element__paragraph">Гора Эльбрус</p>
+				<img class="element__heart" src="images/heart.svg" alt="сердце">
+			</div>
+		</div>
+		<div class="element">
+			<img class="element__image" src="images/Домбай светлый.jpg" alt="Домбай">
+			<div class="element_name">
+				<p class="element__paragraph">Домбай</p>
+				<img class="element__heart" src="images/heart.svg" alt="сердце">
+			</div>
+		</div>
+		<div class="element">
+			<img class="element__image" src="images/Карачаевск светлый.jpg" alt="Карачаево-Черкесск">
+			<div class="element_name">
+				<p class="element__paragraph">Карачаево-Черкесск</p>
+				<img class="element__heart" src="images/heart.svg" alt="сердце">
+			</div>
+		</div>
+  </section>
+  <section class="popup">
+    <!--        popup_opened-->
+    <img class="popup__close" src="images/Close-Icon.svg" alt="крестик">
+    <div class="overlay">
+      <div class="popup__container">
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <fieldset class="popup__fild">
+          <input type="text" value="Жак Ив-Кусто" name="userName" class="popup__form popup__form_name">
+          <input type="text" value="Исследователь океана" name="userPosition"
+                 class="popup__form popup__form_position">
+        </fieldset>
+        <button type="button" class="popup__button">Сохранить</button>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+	<p class="footer__mesto">&copy;2022 Mesto Russia</p>
+</footer>
+
+</body>
+</html>>

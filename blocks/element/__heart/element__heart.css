@@ -1,0 +1,17 @@
+.element__heart {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+
+}
+
+.element__heart:hover {
+  cursor: pointer;
+}
+
+.element__heart:active {
+  display: none;
+
+}
+

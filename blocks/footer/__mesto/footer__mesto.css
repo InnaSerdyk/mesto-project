@@ -1,0 +1,15 @@
+.footer__mesto {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+  color: #545454;
+}
+
+@media screen and (max-width: 320px) {
+  .footer__mesto {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

@@ -1,0 +1,25 @@
+.profile__info_paragraph-name {
+  border: 1px solid blue;
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  color: #FFFFFF;
+  width: 294px;
+  white-space: pre;
+
+
+}
+
+@media screen and (max-width: 320px) {
+  .profile__info_paragraph-name{
+    grid-area: name;
+    width: 189px;
+    font-size: 27px;
+    line-height: 32.68px;
+
+  }
+}

@@ -1,0 +1,7 @@
+@media screen and (max-width: 320px) {
+  .profile__avatar {
+    align-items: center;
+    margin: 0 auto 26px auto;
+  }
+}
+
