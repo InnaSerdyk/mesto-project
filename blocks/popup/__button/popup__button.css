@@ -2,14 +2,24 @@
   color: white;
   background-color: black;
   width: 358px;
-  height: 50px;
+  padding: 15.8px 0;
   font-family: "Inter", sans-serif, Arial;
   margin: 0 0 37px 0;
+  border: none;
+  border-radius: 2px;
+}
+
+.popup__button:hover {
+  opacity: 0.8;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+
 }
 
 @media screen and (max-width: 320px) {
   .popup__button {
     width: 238px;
-
+    padding: 13.8px 0;
+    margin: 0 0 25px 0;
   }
 }

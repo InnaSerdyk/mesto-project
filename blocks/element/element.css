@@ -9,13 +9,13 @@
   .element {
    display: block;
    margin: 20px 0 0 0;
-    width: 282px;
+   width: 282px;
   }
   .element:first-child {
     margin: 0;
   }
   .element:last-child {
-    margin: 0 auto 48px auto;
+    margin: 20px auto 0 auto;
 
   }
 }

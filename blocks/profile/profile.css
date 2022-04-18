@@ -4,24 +4,26 @@
   display: flex;
   align-content: space-between;
   margin: 0 auto;
+
 }
 .profile:last-child {
   margin: 0 0 auto 0;
 }
 
 
-@media screen and (max-width: 890px) {
-  .header {
-    width: 100%;
-    padding: 28px 0 31px 0;
-    margin: 0 auto 42px auto;
+@media screen and (max-width: 660px) {
+  .profile {
+    max-width: 400px;
+    margin: 36px auto 36px auto;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-@media screen and (max-width: 320px) {
-  .profile {
-    max-width: 282px;
-    margin: 42px 0 36px 0;
-    flex-direction: column;
-  }
-}
+/*@media screen and (max-width: 320px) {*/
+/*  .profile {*/
+/*    max-width: 282px;*/
+/*    margin: 36px 0 36px 0;*/
+/*    flex-direction: column;*/
+/*  }*/
+/*}*/

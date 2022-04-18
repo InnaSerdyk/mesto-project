@@ -1,18 +1,21 @@
 .elements {
   max-width: 880px;
-  border: 1px solid yellow;
   display: grid;
   grid-template-columns: repeat(auto-fill, 282px);
   grid-template-rows: repeat(auto-fill, 1fr);
   gap: 20px 17px;
-  margin: 62px auto 0 auto;
-  position: relative;
+  margin: 51px auto 0 auto;
 }
-
+@media screen and (max-width: 880px) {
+  .elements{
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 320px) {
   .elements {
     width: 282px;
     gap: 0;
     margin:0;
+
   }
 }
