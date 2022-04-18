@@ -1,14 +1,13 @@
 .profile__edit-button {
-  border: 1px solid fuchsia;
+  /*border: 1px solid fuchsia;*/
   background-color: black;
   margin: 0;
   padding: 0;
   align-self: center;
-  /*border: none;*/
+  border: none;
   line-height: 48px;
   font-size: 42px;
   width: 24px;
-  align-self: flex-start;
 }
 .profile__edit-button:hover {
   cursor: pointer;
