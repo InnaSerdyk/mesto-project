@@ -10,4 +10,4 @@
 
 Для создания галереи фотографий использована технология: Grid Layout.  
 Проект опубликован:
-https://innaserdyk.github.io/mesto/
+https://innaserdyk.github.io/mesto-project/

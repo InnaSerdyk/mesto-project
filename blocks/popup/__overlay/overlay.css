@@ -1,0 +1,41 @@
+.overlay{
+    position: fixed;
+    left: 425px;
+    top: 195px;
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+}
+
+@media screen and (max-width: 1279px) {
+    .overlay {
+        left: 33vw;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .overlay {
+        left: 20vw;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .overlay {
+        left: 10vw;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .overlay {
+        width: 282px;
+        left: 10vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .overlay {
+        width: 282px;
+        left: 19px;
+        top: 123px;
+    }
+}
