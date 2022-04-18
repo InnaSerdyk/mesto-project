@@ -19,11 +19,6 @@
 			<button class="profile__edit-button">
 				<img class="profile__edit-button profile__edit-button_image" src="images/Edit Button.svg" alt="кнопка добавить">
 			</button>
-
-
-<!--			<fieldset class="profile__edit-button">-->
-<!--				<input type="image" src="images/Edit Button.svg" alt="кнопка редактировать">-->
-<!--			</fieldset>-->
 			<div class="profile__position"><p class="profile__position profile__position_paragraph">Исследователь океана</p></div>
 		</div>
 
@@ -76,12 +71,12 @@
 			</div>
 		</div>
   </section>
-  <section class="popup">
+  <section class="popup popup_opened">
     <!--        popup_opened-->
-    <img class="popup__close" src="images/Close-Icon.svg" alt="крестик">
-    <div class="overlay">
+      <div class="overlay">
+	    <img class="popup__close" src="images/Close-Icon.svg" alt="крестик">
       <div class="popup__container">
-        <h2 class="popup__title">Редактировать профиль</h2>
+	      <h2 class="popup__title">Редактировать профиль</h2>
         <fieldset class="popup__fild">
           <input type="text" value="Жак Ив-Кусто" name="userName" class="popup__form popup__form_name">
           <input type="text" value="Исследователь океана" name="userPosition"
