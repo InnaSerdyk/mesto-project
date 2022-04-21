@@ -1,7 +1,4 @@
-.overlay{
-    position: fixed;
-    left: 425px;
-    top: 195px;
+.overlay {
     display: flex;
     flex-direction: column;
     width: 470px;

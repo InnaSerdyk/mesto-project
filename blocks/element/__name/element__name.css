@@ -1,8 +1,8 @@
-.element_name {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 25px 21px 32px 15px;
-  padding: 0;
-  width: 246px;
+.element__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 21px 32px 15px;
+    padding: 0;
+    width: 246px;
 }

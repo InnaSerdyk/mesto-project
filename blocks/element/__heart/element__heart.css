@@ -7,11 +7,12 @@
     background-repeat: no-repeat;
     background-size: contain;
     box-sizing: border-box;
+    border: none;
 }
 
 .element__heart:hover {
-  cursor: pointer;
-  opacity: .5;
+    cursor: pointer;
+    opacity: .5;
 }
 
 .element__heart:active {
@@ -19,7 +20,5 @@
     background-size: contain;
     box-sizing: border-box;
     background-repeat: no-repeat;
-
-
 }
 
