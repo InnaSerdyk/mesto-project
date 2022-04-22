@@ -1,0 +1,7 @@
+@media screen and (max-width: 320px) {
+    .profile__edit-image {
+        width: 18px;
+        line-height: 33px;
+        font-size: 27px;
+    }
+}
