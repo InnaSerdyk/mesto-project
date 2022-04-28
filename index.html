@@ -29,6 +29,7 @@
     <section class="elements">
         <div class="element">
             <img alt="Карачаевск" class="element__image" src="images/Карачаевск.jpg">
+	          <button class="element__delete" type="button"></button>
             <div class="element__name">
                 <h2 class="element__paragraph">Карачаевск</h2>
                 <button class="element__heart" type="button"></button>
@@ -36,6 +37,7 @@
         </div>
         <div class="element">
             <img alt="гора эльбрус" class="element__image" src="images/Эльбрус.jpg">
+            <button class="element__delete" type="button"></button>
             <div class="element__name">
                 <h2 class="element__paragraph">Гора Эльбрус</h2>
                 <button class="element__heart" type="button"></button>
@@ -43,13 +45,15 @@
         </div>
         <div class="element">
             <img alt="домбай" class="element__image" src="images/Домбай.jpg">
-            <div class="element__name">
+            <button class="element__delete" type="button"></button>
+                <div class="element__name">
                 <h2 class="element__paragraph">Домбай</h2>
                 <button class="element__heart" type="button"></button>
             </div>
         </div>
         <div class="element">
             <img alt="Гора Эльбрус" class="element__image" src="images/Эльбрус-светлый.jpg">
+            <button class="element__delete" type="button"></button>
             <div class="element__name">
                 <h2 class="element__paragraph">Гора Эльбрус</h2>
                 <button class="element__heart" type="button"></button>
@@ -57,6 +61,7 @@
         </div>
         <div class="element">
             <img alt="Домбай" class="element__image" src="images/Домбай-светлый.jpg">
+            <button class="element__delete" type="button"></button>
             <div class="element__name">
                 <h2 class="element__paragraph">Домбай</h2>
                 <button class="element__heart" type="button"></button>
@@ -64,6 +69,7 @@
         </div>
         <div class="element">
             <img alt="Карачаево-Черкесск" class="element__image" src="images/Карачаевск-светлый.jpg">
+            <button class="element__delete" type="button"></button>
             <div class="element__name">
                 <h2 class="element__paragraph">
                     Карачаево-Черкесск</h2>
@@ -75,7 +81,7 @@
 <footer class="footer">
     <p class="footer__mesto">&copy;2022 Mesto Russia</p>
 </footer>
-<div class="popup popup_opened">
+<div class="popup ">
     <!--        popup_opened-->
     <div class="popup__container">
         <button class="popup__close" type="button"></button>
@@ -83,12 +89,27 @@
         <form name="edit-form">
             <fieldset class="popup__field">
                 <input class="popup__input popup__input_type_name" name="userName" type="text" value="Жак Ив-Кусто">
-                <input class="popup__input popup__input_type_position" name="userPosition" type="text"
-                       value="Исследователь океана">
+                <input class="popup__input popup__input_type_position" name="userPosition" type="text" value="Исследователь океана">
             </fieldset>
             <button class="popup__button" type="submit">Сохранить</button>
         </form>
     </div>
 </div>
+<div class="popup-mesto">
+    <!--        popup-mesto_opened-->
+    <div class="popup__container">
+        <button class="popup__close-mesto" type="button"></button>
+        <h2 class="popup__title">Новое место</h2>
+        <form name="create-form">
+            <fieldset class="popup__field">
+                <input class="popup__input popup__input_type_name" name="userName" type="text" placeholder="Название">
+                <input class="popup__input popup__input_type_position" name="userPosition" type="text"
+                       placeholder="Ссылка на картинку">
+            </fieldset>
+            <button class="popup__button" type="submit">Создать</button>
+        </form>
+    </div>
+</div>
+<script src="mesto.js"></script>
 </body>
 </html>
