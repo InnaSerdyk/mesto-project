@@ -27,55 +27,56 @@
         </button>
     </section>
     <section class="elements">
-        <div class="element">
-            <img alt="Карачаевск" class="element__image" src="images/Карачаевск.jpg">
-	          <button class="element__delete" type="button"></button>
-            <div class="element__name">
-                <h2 class="element__paragraph">Карачаевск</h2>
-                <button class="element__heart" type="button"></button>
-            </div>
-        </div>
-        <div class="element">
-            <img alt="гора эльбрус" class="element__image" src="images/Эльбрус.jpg">
-            <button class="element__delete" type="button"></button>
-            <div class="element__name">
-                <h2 class="element__paragraph">Гора Эльбрус</h2>
-                <button class="element__heart" type="button"></button>
-            </div>
-        </div>
-        <div class="element">
-            <img alt="домбай" class="element__image" src="images/Домбай.jpg">
-            <button class="element__delete" type="button"></button>
-                <div class="element__name">
-                <h2 class="element__paragraph">Домбай</h2>
-                <button class="element__heart" type="button"></button>
-            </div>
-        </div>
-        <div class="element">
-            <img alt="Гора Эльбрус" class="element__image" src="images/Эльбрус-светлый.jpg">
-            <button class="element__delete" type="button"></button>
-            <div class="element__name">
-                <h2 class="element__paragraph">Гора Эльбрус</h2>
-                <button class="element__heart" type="button"></button>
-            </div>
-        </div>
-        <div class="element">
-            <img alt="Домбай" class="element__image" src="images/Домбай-светлый.jpg">
-            <button class="element__delete" type="button"></button>
-            <div class="element__name">
-                <h2 class="element__paragraph">Домбай</h2>
-                <button class="element__heart" type="button"></button>
-            </div>
-        </div>
-        <div class="element">
-            <img alt="Карачаево-Черкесск" class="element__image" src="images/Карачаевск-светлый.jpg">
-            <button class="element__delete" type="button"></button>
-            <div class="element__name">
-                <h2 class="element__paragraph">
-                    Карачаево-Черкесск</h2>
-                <button class="element__heart" type="button"></button>
-            </div>
-        </div>
+
+<!--        <div class="element">-->
+        <!--            <img alt="Карачаевск" class="element__image" src="images/Карачаевск.jpg">-->
+        <!--	          <button class="element__delete" type="button"></button>-->
+        <!--            <div class="element__name">-->
+        <!--                <h2 class="element__paragraph">Карачаевск</h2>-->
+        <!--                <button class="element__heart" type="button"></button>-->
+        <!--            </div>-->
+<!--        </div>-->
+<!--        <div class="element">-->
+<!--            <img alt="гора эльбрус" class="element__image" src="images/Эльбрус.jpg">-->
+<!--            <button class="element__delete" type="button"></button>-->
+<!--            <div class="element__name">-->
+<!--                <h2 class="element__paragraph">Гора Эльбрус</h2>-->
+<!--                <button class="element__heart" type="button"></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="element">-->
+<!--            <img alt="домбай" class="element__image" src="images/Домбай.jpg">-->
+<!--            <button class="element__delete" type="button"></button>-->
+<!--                <div class="element__name">-->
+<!--                <h2 class="element__paragraph">Домбай</h2>-->
+<!--                <button class="element__heart" type="button"></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="element">-->
+<!--            <img alt="Гора Эльбрус" class="element__image" src="images/Эльбрус-светлый.jpg">-->
+<!--            <button class="element__delete" type="button"></button>-->
+<!--            <div class="element__name">-->
+<!--                <h2 class="element__paragraph">Гора Эльбрус</h2>-->
+<!--                <button class="element__heart" type="button"></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="element">-->
+<!--            <img alt="Домбай" class="element__image" src="images/Домбай-светлый.jpg">-->
+<!--            <button class="element__delete" type="button"></button>-->
+<!--            <div class="element__name">-->
+<!--                <h2 class="element__paragraph">Домбай</h2>-->
+<!--                <button class="element__heart" type="button"></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="element">-->
+<!--            <img alt="Карачаево-Черкесск" class="element__image" src="images/Карачаевск-светлый.jpg">-->
+<!--            <button class="element__delete" type="button"></button>-->
+<!--            <div class="element__name">-->
+<!--                <h2 class="element__paragraph">-->
+<!--                    Карачаево-Черкесск</h2>-->
+<!--                <button class="element__heart" type="button"></button>-->
+<!--            </div>-->
+<!--        </div>-->
     </section>
 </main>
 <footer class="footer">
@@ -110,6 +111,17 @@
         </form>
     </div>
 </div>
+<!--template карточки-->
+<template id = "element-template">
+	<div class="element">
+		<img class="element__image">
+		<button class="element__delete" type="button"></button>
+		<div class="element__name">
+			<h2 class="element__paragraph"></h2>
+			<button class="element__heart" type="button"></button>
+		</div>
+	</div>
+</template>
 <script src="mesto.js"></script>
 </body>
 </html>
