@@ -6,6 +6,8 @@ const closePopup = document.querySelector('.popup__close');
 const closePopupMesto = document.querySelector('.popup__close-mesto');
 const openPopupMesto = document.querySelector('.popup-mesto');
 const editForm = document.querySelector('[name="edit-form"]');
+const createForm = document.querySelector('[name="create-form"]');
+
 /*открытие и закрытие попап edit*/
 editButton.addEventListener('click', function popupOpened() {
     openPopup.classList.add('popup_opened');
@@ -25,7 +27,7 @@ closePopupMesto.addEventListener('click', function popupClose() {
 const inputName = editForm.querySelector('.popup__input_type_name');
 const inputPosition = editForm.querySelector('.popup__input_type_position');
 
-/*Обработчик «отправки» формы*/
+/*Обработчик «отправки» формы редактирования*/
 function formSubmitHandler(evt) {
     evt.preventDefault();
     const profileName = document.querySelector('.profile__name');
@@ -70,59 +72,52 @@ const initialCards = [
     }
 ];
 
-// function addCard(nameCard, linkCard) {
-//     const cardContainer = document.createElement('div');
-//     cardContainer.classList.add('element');
-//
-//     const cardImage = document.createElement('img');
-//     cardImage.classList.add('element__image');
-//     image.src = linkCard;
-//     image.alt = nameCard;
-//
-//     const deleteButton = document.createElement('button');
-//     deleteButton.classList.add('element__delete');
-//
-//     const nameElement = document.createElement('div');
-//     nameElement.classList.add('element__name');
-//
-//     const nameParagraph = document.createElement('h2');
-//     nameParagraph.classList.add('element__paragraph');
-//     nameParagraph.textContent = nameCard;
-//
-//     const likeButton = document.createElement('button');
-//     likeButton.classList.add('element__heart');
-//
-//     cardContainer.append(cardImage, deleteButton, nameElement,
-//         nameParagraph, likeButton);
-// }
-//карточки через template
-//???????????????
-//initialCards.forEach()
+const elements = document.querySelector('.elements');
 
-initialCards.forEach(function (addCard) {
+function createCard(addCard) {
     const elementTemplate = document.querySelector('#element-template').content;
     const elementDiv = elementTemplate.querySelector('.element').cloneNode(true);
-    const elements = document.querySelector('.elements');
-
     let elementImage = elementDiv.querySelector('.element__image');
     elementImage.setAttribute("src", addCard.link);
     elementImage.setAttribute("alt", addCard.name);
     elementDiv.querySelector('.element__paragraph').textContent = addCard.name;
-    elements.append(elementDiv);
 
-//удаление карточки
+    //like
+    let buttonLike = elementDiv.querySelector('.element__heart');
+    buttonLike.addEventListener('click', function (evt) {
+        evt.target.classList.toggle('.element__heart:active');
+    });
+    //удаление карточки
     const buttonDelete = elementDiv.querySelector('.element__delete');
     buttonDelete.addEventListener('click', function () {
         const CardImage = buttonDelete.closest('.element');
         CardImage.remove();
     })
+    return elementDiv;
+}
+
+initialCards.forEach(function (addCard) {
+    const elementDiv = createCard(addCard);
+
+    elements.append(elementDiv);
 });
 
+const inputTitle = createForm.querySelector('.popup__input_type_title');
+const inputLink = createForm.querySelector('.popup__input_type_link');
 
-// like
-//
+/*Обработчик «отправки» формы добавления карточки*/
+function formSubmitAdd(evt) {
+    evt.preventDefault();
 
+    const card = {
+        name: inputTitle.value,
+        link: inputLink.value
+    };
 
-// element.forEach((button) => {
-//     button.classList.add('');
-// }
+    let cardElement = createCard(card);
+    elements.prepend(cardElement);
+
+    openPopupMesto.classList.remove('popup-mesto_opened');
+}
+
+createForm.addEventListener('submit', formSubmitAdd);

@@ -16,7 +16,7 @@
         <div class="profile__info">
             <h1 class="profile__name">Жак-Ив&nbsp;Кусто</h1>
             <button class="profile__edit-button" type="button">
-                <img alt="кнопка добавить" class="profile__edit-image"
+                <img alt="кнопка редактировать" class="profile__edit-image"
                      src="images/Edit-Button.svg">
             </button>
             <p class="profile__position">Исследователь
@@ -82,7 +82,7 @@
 <footer class="footer">
     <p class="footer__mesto">&copy;2022 Mesto Russia</p>
 </footer>
-<div class="popup ">
+<div class="popup">
     <!--        popup_opened-->
     <div class="popup__container">
         <button class="popup__close" type="button"></button>
@@ -103,11 +103,11 @@
         <h2 class="popup__title">Новое место</h2>
         <form name="create-form">
             <fieldset class="popup__field">
-                <input class="popup__input popup__input_type_name" name="userName" type="text" placeholder="Название">
-                <input class="popup__input popup__input_type_position" name="userPosition" type="text"
+                <input class="popup__input popup__input_type_title" name="userTitle" type="text" placeholder="Название">
+                <input class="popup__input popup__input_type_link" name="userLink" type="text"
                        placeholder="Ссылка на картинку">
             </fieldset>
-            <button class="popup__button" type="submit">Создать</button>
+            <button class="popup__button-add" type="submit">Создать</button>
         </form>
     </div>
 </div>
