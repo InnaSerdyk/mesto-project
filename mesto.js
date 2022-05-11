@@ -98,7 +98,7 @@ function createCard(card) {
     elementHeart.addEventListener('click', paintHeart);
 
     function paintHeart(evt) {
-        evt.target.classList.toggle('.element__heart:active')
+        evt.target.classList.toggle('element__heart_active')
     }
 
     //удаление карточки
