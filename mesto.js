@@ -4,21 +4,12 @@ const profileButton = content.querySelector('.profile__button');
 const openPopup = document.querySelector('.popup');
 const closePopup = document.querySelector('.popup__close');
 const closePopupMesto = document.querySelector('.popup__close-mesto');
+const closePopupImage = document.querySelector('.popup-image__close');
 const openPopupMesto = document.querySelector('.popup-mesto');
+const openPopupImage = document.querySelector('.popup-image');
 const editForm = document.querySelector('[name="edit-form"]');
 const createForm = document.querySelector('[name="create-form"]');
 
-
-// editButton.addEventListener('click', openPopup);
-// editButton.addEventListener('click', openPopup);
-
-// /*открытие и закрытие попап edit*/
-// function openPopup() {
-//     openPopup.classList.add('popup_opened');
-// }
-// function closePopup() {
-//     closePopup.classList.remove('popup_opened');
-// }
 
 editButton.addEventListener('click', function popupOpened() {
     openPopup.classList.add('popup_opened');
@@ -34,7 +25,10 @@ profileButton.addEventListener('click', function popupOpened() {
 closePopupMesto.addEventListener('click', function popupClose() {
     openPopupMesto.classList.remove('popup-mesto_opened');
 })
-
+//закрытие попапа image
+closePopupImage.addEventListener('click', function popupClose() {
+    openPopupImage.classList.remove('popup-image__opened');
+})
 const inputName = editForm.querySelector('.popup__input_type_name');
 const inputPosition = editForm.querySelector('.popup__input_type_position');
 
@@ -119,7 +113,7 @@ function createCard(card) {
         elementImage.setAttribute("src", card.link);
         elementImage.setAttribute("alt", card.name);
         elementDiv.querySelector('.element__paragraph').textContent = card.name;
-        popupImage.classList.add('popup-image_opened');
+        popupImage.classList.add('popup-image__opened');
     });
     return elementDiv;
 
