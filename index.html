@@ -15,14 +15,14 @@
 		<img alt="аватарка" class="profile__avatar" src="images/Avatar.svg">
 		<div class="profile__info">
 			<h1 class="profile__name">Жак-Ив&nbsp;Кусто</h1>
-			<button class="profile__edit-button" type="button">
+			<button class="profile__button profile__button_edit" type="button">
 				<img alt="кнопка редактировать" class="profile__edit-image"
 				     src="images/Edit-Button.svg">
 			</button>
 			<p class="profile__position">Исследователь
 				океана</p>
 		</div>
-		<button class="profile__button" type="button">
+		<button class="profile__button profile__button_add" type="button">
 			<img alt="кнопка добавить" class="profile__add-image" src="images/plus.svg">
 		</button>
 	</section>
@@ -32,12 +32,12 @@
 <footer class="footer">
 	<p class="footer__mesto">&copy;2022 Mesto Russia</p>
 </footer>
-<div class="popup">
+<div class="popup popup_edit">
 	<!--        popup_opened-->
 	<div class="popup__container">
 		<button class="popup__close" type="button"></button>
 		<h2 class="popup__title">Редактировать профиль</h2>
-		<form name="edit-form">
+		<form class = 'popup__form' name="popup-edit">
 			<fieldset class="popup__field">
 				<input class="popup__input popup__input_type_name" name="userName" type="text" value="Жак Ив-Кусто">
 				<input class="popup__input popup__input_type_position" name="userPosition" type="text"
@@ -47,27 +47,27 @@
 		</form>
 	</div>
 </div>
-<div class="popup-mesto">
+<div class="popup popup_mesto">
 	<!--        popup-mesto_opened-->
 	<div class="popup__container">
-		<button class="popup__close-mesto" type="button"></button>
+		<button class="popup__close" type="button"></button>
 		<h2 class="popup__title">Новое место</h2>
-		<form name="create-form">
+		<form class = 'popup__form' name="popup-create">
 			<fieldset class="popup__field">
 				<input class="popup__input popup__input_type_title" name="userTitle" placeholder="Название" type="text">
 				<input class="popup__input popup__input_type_link" name="userLink" placeholder="Ссылка на картинку"
 				       type="text">
 			</fieldset>
-			<button class="popup__button-add" type="submit">Создать</button>
+			<button class="popup__button" type="submit">Создать</button>
 		</form>
 	</div>
 </div>
-<div class="popup-image">
-	<figure class="popup-image__container">
-		<button class="popup-image__close" type="button"></button>
-		<img alt='empty' class="popup-image__open"
-		     src='empty'>
-		<figcaption class="popup-image__name"></figcaption>
+<div class="popup popup_image">
+	<figure class="popup__container popup__container_image">
+		<button class="popup__close popup__close_image" type="button"></button>
+		<img alt='empty' class="popup__image-open"
+		     src= 'empty'>
+		<figcaption class="popup__image-name"></figcaption>
 	</figure>
 </div>
 <!--template карточки-->
