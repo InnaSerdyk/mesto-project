@@ -14,6 +14,7 @@ const inputName = editingForm.querySelector('.popup__input_type_name');
 const inputPosition = editingForm.querySelector('.popup__input_type_position');
 const elementTemplate = document.querySelector('#element-template').content;
 const imageContainer = document.querySelector('.popup__image-open');
+const imageName = openingImagePopup.querySelector(".popup__image-name");
 
 function openPopup(popup) {
     popup.classList.add('popup_opened');
@@ -107,10 +108,7 @@ function createCard(card) {
     elementImage.addEventListener('click', function () {
         imageContainer.setAttribute('src', card.link);
         imageContainer.setAttribute('alt', card.name);
-        const imageName = openingImagePopup.querySelector(".popup__image-name");
         imageName.textContent = card.name;
-
-        elementDiv.querySelector('.element__paragraph').textContent = card.name;
         openPopup(openingImagePopup);
     });
     return elementDiv;
@@ -136,7 +134,7 @@ function formSubmitAddHandler(evt) {
     elements.prepend(cardElement);
     inputTitle.value = '';
     inputLink.value = '';
-    closePopup(evt.target.closest('.popup'));
+    closePopup(mestoPopup);
 }
 
 creationForm.addEventListener('submit', formSubmitAddHandler);
