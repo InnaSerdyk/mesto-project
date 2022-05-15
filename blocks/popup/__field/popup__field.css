@@ -6,7 +6,7 @@
     border: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 580px) {
     .popup__field {
         margin: 0 0 10px 0;
     }
